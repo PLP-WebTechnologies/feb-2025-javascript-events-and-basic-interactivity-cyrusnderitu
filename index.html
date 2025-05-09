@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Plant Haven</title>
+</head>
+<body>
+    <header>
+        <div class="bg"></div>
+        <nav>
+            <div class="nav_logo"><h1>Plant Haven</h1></div>
+            <div class="nav_menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Shope</li>
+                    <li>Plant Care</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="flower">
+                <dotlottie-player
+                    src="https://lottie.host/c08d5d54-1c34-4475-9700-16ce31169114/YsaY6Rk1dw.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    loop
+                    autoplay
+                </dotlottie-player>
+            </div>
+            <div class="hero_desc">
+                <div class="hero_txt">
+                        <div class="split-reveal" data-text="Grow">
+                            Grow <span class="reveal-text">& Glow</span>
+                        </div> <div style="font-size: 3.5rem; font-weight: 900; display: inline;">your home with <span class="stroke">GREEN</span> and make you feel <span style="color: rgb(71, 218, 71);">BETTER</span> </div>
+                </div>
+                <p>Discover a world of vibrant greenery, expert care tips, and hand-picked plants perfect for any home or office. Whether you're a seasoned plant parent or just getting started, we're here to help you grow with confidence</p>
+                <div class="hero_cta">
+                    <button>Browse Plants</button>
+                    <button>Learn Plant Care</button>
+                </div>
+            </div>
+            <div class="hero_img">
+                <dotlottie-player
+                    src="https://lottie.host/0f0622ca-dd4e-4a66-89fd-e441b7984bba/QHU2huFRIh.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 550px; height: 550px"
+                    loop
+                    autoplay
+                ></dotlottie-player>
+            </div>
+        </div>
+    </header>
+      <section style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; ">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); flex: 1; column-gap: 1rem; row-gap: 3rem;">
+          <div style="border-radius: 15px 0 0 0; height: 185px; width: 225px; background-color:lightgreen; background-image: url(https://cdn.shopify.com/s/files/1/1380/2059/files/Optimized-Change_is_not_good-Plant_Care_480x480.jpg?v=1606981098); background-size: cover; background-repeat: no-repeat;" >
+          </div>
+          <div style="border-radius: 0 15px 0 0; height: 185px; width: 225px; background-color:lightgreen;  background-image: url(https://www.gardenia.net/wp-content/uploads/2023/02/shutterstock_627274796Optimized.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+          <div style="border-radius: 0 0 15px 0; height: 185px; width: 225px; background-color:lightgreen; background-image: url(https://bouqs.com/blog/wp-content/uploads/2024/03/shutterstock_2104522187-min-1080x720.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+          <div style="border-radius: 0 0 0 15px; height: 185px; width: 225px; background-color:lightgreen; background-image: url(https://media.architecturaldigest.com/photos/582cb3dcefb84d105bd0223d/master/w_1600%2Cc_limit/succulents-care-04.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+        </div>
+        <div style="flex: 1; text-align: left;">
+            <h2 style="margin: 1rem 0; font-size: 2rem; font-weight: 800;">Where Green <span style="color: #2e7d32;">Dreams</span> Blossom</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita atque praesentium excepturi. Aliquam corporis eos facilis, numquam rerum iste odio sapiente eveniet laboriosam itaque. Consectetur aspernatur quisquam in asperiores?</p>
+            <div class="" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; margin-top: 2rem;">
+              <button style="border: none; color:white; padding: 1rem 1.25rem; font-size:16px; border-radius: 15px; background-color: #19b82c; font-family: inherit;">Learn More</button>
+              <ul style="display: flex; gap: 1rem; font-size: 1.75rem;">
+                <li><i class="fa-brands fa-facebook" style="color: #26b530;"></i></li>
+                <li><i class="fa-brands fa-square-instagram" style="color: #24b735;"></i></li>
+                <li><i class="fa-brands fa-x-twitter" style="color: #19b82c;"></i></li>
+              </ul>
+            </div>
+        </div>
+      </section>
+    <section style="padding: 4rem 2rem; background-color: #f9f9f9;" class="categories
+    ">
+        <h2>Shop by Plant Category</h2>
+        <div class="filters">
+          <button class="filter" data-filter="all">All</button>
+          <button class="filter" data-filter=".indoor">Indoor</button>
+          <button class="filter" data-filter=".air">Air-Purifying</button>
+          <button class="filter" data-filter=".pet">Pet Friendly</button>
+        </div>
+
+        <div class="plant-grid container" id="plantGrid" style="margin-top: 6rem;">
+          <!-- Plant 1 -->
+            <div class="product-card card mix indoor air">
+              <div class="product-header">
+                <img class='product-picture' src='./—Pngtree—indoor plant flowerpot_14685403.png'  alt="plant"/>
+              </div>
+              <div class="card-details">
+                <h3 class="product-name">Calathea Orbifolia</h3>
+                <p class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (154)
+                </p>
+                <div class="bottom-row">
+                  <p class="price">2,195 Ksh</p>
+                  <button class="add-cart"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- Plant 2 -->
+            <div class="product-card card mix indoor pet">
+              <div class="product-header">
+                <img class='product-picture' src='./—Pngtree—home plant in pot cutout_14866378.png' />
+              </div>
+              <div class="card-details">
+                <h3 class="product-name">Philodendron</h3>
+                <p class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i> (48)
+                </p>
+                <div class="bottom-row">
+                  <p class="price">2,995 Ksh</p>
+                  <button class="add-cart"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- Plant 3 -->
+            <div class="product-card card mix air">
+              <div class="product-header">
+                <img class='product-picture' src='./—Pngtree—potted plants_4446174.png'  style="margin-top: 1.5rem;"/>
+              </div>
+              <div class="card-details">
+                <h3 class="product-name">Philodendron</h3>
+                <p class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i> (48)
+                </p>
+                <div class="bottom-row">
+                  <p class="price">2,755 Ksh</p>
+                  <button class="add-cart"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- Plant 4 -->
+            <div class="product-card card mix pet">
+              <div class="product-header">
+                <img class='product-picture' src='./—Pngtree—luxurious black plant pot showcasing_16222098.png' />
+              </div>
+              <div class="card-details">
+                <h3 class="product-name">Musa Calendiva</h3>
+                <p class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (361)
+                </p>
+                <div class="bottom-row">
+                  <p class="price">3,295 Ksh</p>
+                  <button class="add-cart"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 4rem 2rem; background-color: #f9f9f9;">
+        <h2 style="text-align: center; color: #2e7d32; font-size: 2.5rem;">Featured Plants</h2>
+        <p style="text-align: center; max-width: 600px; margin: 1rem auto; color: #555;">
+          Discover our top picks this season — low-maintenance beauties perfect for home or office.
+        </p>
+    <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Card 1 -->
+          <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Snake Plant">
+            <h3>Snake Plant</h3>
+            <p>Air-purifying and drought-resistant. Great for beginners.</p>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Monstera">
+            <h3>Monstera</h3>
+            <p>Tropical vibes with iconic split leaves. Loves bright spaces.</p>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Pothos">
+            <h3>Golden Pothos</h3>
+            <p>Fast-growing and easy to propagate. Thrives in low light.</p>
+          </div>
+    
+          <!-- Add more cards here if needed -->
+        </div>
+      </div>
+    
+      <div class="slider-buttons">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+      </div>
+    </section>
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+<script src="./main.js"></script>
+</body>
+</html>
