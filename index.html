@@ -9,17 +9,17 @@
     <title>Plant Haven</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="bg"></div>
         <nav>
             <div class="nav_logo"><h1>Plant Haven</h1></div>
             <div class="nav_menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Shope</li>
-                    <li>Plant Care</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#plantCare">Plant Care</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -79,7 +79,7 @@
             </div>
         </div>
       </section>
-    <section style="padding: 4rem 2rem; background-color: #f9f9f9;" class="categories
+    <section style="padding: 4rem 2rem; background-color: #f9f9f9;" id="shop"  class="categories
     ">
         <h2>Shop by Plant Category</h2>
         <div class="filters">
@@ -156,7 +156,43 @@
             </div>
         </div>
     </section>
-    <section style="padding: 4rem 2rem; background-color: #f9f9f9;">
+    <section style="padding: 4rem 2rem; background: #ffffff; font-family: 'Poppins';" id="plantCare">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="text-align: center; color: #2e7d32; font-size: 2.5rem;">Plant Care Guide</h2>
+        <p style="text-align: center; color: #555;">Learn how to keep your plants happy, healthy, and thriving.</p>
+    
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">1. Watering <span>+</span></button>
+            <div class="accordion-body">
+              <p>Most houseplants prefer consistent but moderate watering. Always check soil moisture before watering—overwatering is a common mistake.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header">2. Lighting <span>+</span></button>
+            <div class="accordion-body">
+              <p>Identify your plant’s light needs. Bright, indirect light is ideal for many indoor plants. Avoid placing them in harsh direct sunlight unless specified.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header">3. Soil & Potting <span>+</span></button>
+            <div class="accordion-body">
+              <p>Use well-draining soil suitable for the plant type. Repot annually to refresh nutrients and prevent root binding.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header">4. Fertilizing <span>+</span></button>
+            <div class="accordion-body">
+              <p>Feed your plant with diluted fertilizer every 4–6 weeks during the growing season (spring and summer). Reduce feeding in winter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding: 4rem 2rem; background-color: #f9f9f9;" id="about">
         <h2 style="text-align: center; color: #2e7d32; font-size: 2.5rem;">Featured Plants</h2>
         <p style="text-align: center; max-width: 600px; margin: 1rem auto; color: #555;">
           Discover our top picks this season — low-maintenance beauties perfect for home or office.

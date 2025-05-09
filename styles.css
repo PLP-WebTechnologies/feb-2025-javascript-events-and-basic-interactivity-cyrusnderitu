@@ -14,7 +14,11 @@ body{
 header{
     min-height: 100vh;
 }
-li{
+a{
+  text-decoration: none;
+  color: #444;
+}
+li,a{
     list-style: none;
     font-weight: 500;
     transition: 1s ease-in-out;
@@ -35,7 +39,7 @@ nav{
     justify-content: space-between;
     font-size: 1rem;
 }
-nav li:hover{
+nav a:hover{
     text-decoration: underline;
     cursor: pointer;
     text-underline-offset: 3px;
@@ -307,8 +311,8 @@ section {
     align-items: center;
   }
   .container .product-card .card-details .bottom-row .price {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 1.25rem;
+    margin-left: 1.75rem;
     font-weight: 600;
   }
   .container .product-card .card-details .bottom-row .add-cart {
@@ -320,4 +324,39 @@ section {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+  }
+
+  .accordion {
+    margin-top: 2rem;
+  }
+
+  .accordion-header {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-header.active {
+    background: #c8e6c9;
+  }
+
+  .accordion-body {
+    padding: 0 1rem 1rem;
+    background: #f9f9f9;
+    color: #444;
+    border-left: 4px solid #81c784;
+    border-radius: 0 0 6px 6px;
+    display: none;
   }
